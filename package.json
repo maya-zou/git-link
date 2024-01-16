@@ -30,8 +30,12 @@
     "commands": [
       {
         "command": "extension.openRemoteRepository",
-        "title": "在浏览器中打开远程仓库",
+        "title": "%extension.openRemoteRepository.title%",
         "icon": "assets/logo.png"
+      },
+      {
+        "command": "extension.openRemoteFile",
+        "title": "%extension.openRemoteFile.title%"
       }
     ],
     "menus": {
@@ -39,6 +43,18 @@
         {
           "when": "scmProvider == git",
           "command": "extension.openRemoteRepository",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "extension.openRemoteFile",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "extension.openRemoteFile",
           "group": "navigation"
         }
       ]
@@ -55,7 +71,7 @@
     "lint": "eslint src --ext ts",
     "test": "vscode-test",
     "build": "vsce package",
-    "publish": "vsce publish patch"
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/vscode": "^1.85.0",
@@ -72,6 +88,7 @@
     "@vscode/test-electron": "^2.3.8"
   },
   "dependencies": {
-    "vsce": "^1.95.0"
+    "vsce": "^1.95.0",
+    "vscode-nls-i18n": "^0.2.4"
   }
 }
