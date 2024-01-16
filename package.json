@@ -55,7 +55,7 @@
     "lint": "eslint src --ext ts",
     "test": "vscode-test",
     "build": "vsce package",
-    "publish": "vsce publish"
+    "publish": "vsce publish patch"
   },
   "devDependencies": {
     "@types/vscode": "^1.85.0",
