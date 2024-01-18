@@ -2,7 +2,7 @@
   "name": "git-link",
   "displayName": "Git-Link",
   "description": "GitHub & GitLab & Gitee open remote repository",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.42.0"
   },
