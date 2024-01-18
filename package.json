@@ -4,7 +4,7 @@
   "description": "GitHub & GitLab & Gitee open remote repository",
   "version": "0.1.0",
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.42.0"
   },
   "publisher": "maya",
   "license": "MIT",
@@ -74,7 +74,7 @@
     "publish": "vsce publish"
   },
   "devDependencies": {
-    "@types/vscode": "^1.85.0",
+    "@types/vscode": "^1.42.0",
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
